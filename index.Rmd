@@ -1,0 +1,45 @@
+---
+title       : Developing Data Products Presentation
+subtitle    : Auto Performance Check  
+author      : Vivek Singhal
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+
+* The purpose of this slideshow is to illustrate a simple but useful Car App on Shiny
+* Many Car enthusiasts are enamored with understanding performance of cars across makes and models
+* This app plays a small part in addressing that interest
+
+---
+## Data
+
+* The data used is an R dataset "mtcars"
+* This data was extracted from the 1974 Motor Trend US magazine and comprises of information for 32 automobilies from 1973-1974
+* More information on the dataset can be found below:
+* https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html
+
+---
+## App Information
+
+* The indicators available for manipulation include: displacement, gears, cyclinders.
+* The results include a table of  a max top 5 cars by MPG and mean MPG and HP of the cars outputted.
+* The app is hosted on shiny server and can be found below:
+* https://vsinghal12.shinyapps.io/DataProdShinyApp/
+
+---
+## Sample Chart Output
+* Below is a sample header output that will be generated from the shiny app
+
+```{r echo=FALSE, warnings=FALSE, message=FALSE}
+
+suppressPackageStartupMessages(library(datasets))
+data("mtcars")
+head(mtcars)
+```
